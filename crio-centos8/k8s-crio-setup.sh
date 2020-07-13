@@ -1,7 +1,4 @@
-#!/bin/env bash
-
-# Set Kubernetes & CRI-O version
-export REQUIRED_VERSION=1.18
+#!/usr/bin/env bash
 
 # Update all packets
 dnf -y update
