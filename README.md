@@ -11,5 +11,5 @@ Shell scripts for install Kubernetes
 Set version of CRI-O and Kubernetes in `k8s-crio-setup.sh` if you want to change from 1.18: variable `REQUIRED_VERSION`
 
 **Install:**
-
+ 
     sudo chmod +x k8s-crio-setup.sh && sudo ./k8s-crio-setup.sh
