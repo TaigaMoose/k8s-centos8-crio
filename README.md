@@ -1,5 +1,6 @@
 # k8s-shell-scripts
-Shell scripts for install Kubernetes
+Shell scripts for setup Kubernetes
+
 
 ### Install Kubernetes with CRI-O runtime on CentOS 8 - `cd ./crio-centos8`
 
