@@ -8,7 +8,7 @@ Shell scripts for setup Kubernetes
 * I recommend at least one host with minimum 2 cores, 4 GB RAM, 25 GB HDD  
 * Installed CentOS 8 (I recommend "Server" profile)
 
-**Сustomization:**
+**Сustomization:**  
 Set version of CRI-O and Kubernetes in `k8s-crio-setup.sh` if you want to change from 1.18: variable `REQUIRED_VERSION`  
 
 **Install:**
