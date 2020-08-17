@@ -1,10 +1,8 @@
 #!/bin/env bash
 
-# Set Kubernetes & CRI-O version
-
-if [[ -z "$REQUIRED_VERSION" ]]; then
+if [[ ! -z "$REQUIRED_VERSION" ]]; then
     
-echo "Kubernetes & CRI-O version is $REQUIRED_VERSION\n"
+    echo "Kubernetes & CRI-O version is $REQUIRED_VERSION\n"
 
     # Update all packets
     dnf -y update
