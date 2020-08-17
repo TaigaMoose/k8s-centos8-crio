@@ -2,7 +2,7 @@
 
 if [[ ! -z "$REQUIRED_VERSION" ]]; then
     
-    echo "Kubernetes & CRI-O version is $REQUIRED_VERSION\n"
+    echo -e ">>> Kubernetes & CRI-O version is $REQUIRED_VERSION\n"
 
     # Update all packets
     dnf -y update
@@ -69,8 +69,10 @@ KUBELET_EXTRA_ARGS=--container-runtime=remote --cgroup-driver=systemd --containe
 EOF
     sudo systemctl enable --now kubelet
 
+    echo -e "\n>>> Now you can initiate K8s with \`kubeadm init\` command"
+
 else
 
-    echo "Please setup Kubernetes & CRI-O version as \$REQUIRED_VERSION"
+    echo ">>> Please setup Kubernetes & CRI-O version as \$REQUIRED_VERSION"
 
 fi
