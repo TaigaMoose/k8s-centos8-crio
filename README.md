@@ -14,7 +14,11 @@ Setup version of CRI-O and Kubernetes and run with `sudo` (or from `root`):
     sudo bash -c "export REQUIRED_VERSION=1.18 && ./crio-centos8/k8s-crio-setup.sh"
  
 ### Add user to Kubernetes cluster and generate KUBECONFIG (./k8s-add-user)
-
+  
+**Prerequisites:**  
+* 'jq' JSON processor installed 
+* 'kubectl' running with working 'KUBECONFIG'  
+  
 **Using:**  
  
     ./kubeconfig-custom.sh <company-username> <ClusterRole>
